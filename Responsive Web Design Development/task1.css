@@ -1,0 +1,529 @@
+/* General styles for the body */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #e9e9e9;
+    font-size: 16px;
+    margin: 0px;
+}
+
+/* Heading styles for titles */
+h1, h2, .main-title, .sub-title {
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+/* Styling for the main title */
+h1 {
+    font-size: 96px;
+    font-weight: bold;  
+}
+
+/* Centered white container with auto margins */
+.white-container-box {
+    text-align: center;
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+/* Styling for images within the white container box */
+.white-container-box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Navigation links setup */
+.nav-links {
+    text-align: center;
+    display: flex;
+    gap: 136px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Styling for navigation links */
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#main-content {
+    background-color: #ffffff;
+    padding: 0px;
+    border: 1px solid #000000;
+    margin: 40px auto;
+    max-width: 80%;
+    margin-bottom: 0;
+}
+
+/* Styling for title */
+.title {
+    font-size: 96px;
+    padding: 50px;
+    margin: 20px 0 20px 0;
+   
+}
+
+
+.subtitle {
+    font-size: x-large;
+    margin: 20px 50px;
+}
+
+/* Container with grid layout */
+.grid-container {
+    column-count: 3;
+    padding: 0 50px 50px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.featured {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.album-cover {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+/* Featured section */
+.featured img,
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.author {
+    text-align: left;
+    padding: 50px 50px;
+}
+
+
+.author_section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 63px;
+    align-items: center;
+}
+
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centered headings and paragraphs in text content */
+.text-content h2 {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.text-content p {
+    margin: 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.author img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #14181d;
+    color: aliceblue;
+    padding: 20px 0;
+}
+
+/* Media Query for Desktop (1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 50px;
+        padding-right: 50px
+    }
+
+    .white-container-box img {
+        width: 200px;
+    }
+
+    .nav-links {
+        gap: 173px;
+        justify-content: center;
+    }
+
+    .subtitle {
+        font-size: x-large;
+    }
+
+    #main-content {
+        background-color: #ffffff;
+    padding: 0px;
+    border: 1px solid #000000;
+    margin: 40px auto;
+    max-width: 80%;
+    margin-bottom: 0;
+    }
+
+    .author {
+        padding: 50px 150px;;
+    }
+}
+
+/* Media Query for Tablet (720px - 1024px) */
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #e9e9e9;
+        font-family: sans-serif;
+        align-content: center;
+    }
+
+
+    .header {
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .white-container-box img  {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+
+    .main-content {
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        padding: 40px;
+        border: 1px solid #000;
+    }
+
+
+    .title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    .subtitle {
+        margin-bottom: 50px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    .heading {
+        font-size: 36px;
+        margin: 30px 0;
+        text-align: center;
+    }
+    .grid-container {
+        column-count: 1;
+        margin-bottom: 40px;
+    }
+
+
+    .grid-container{
+        text-align: left;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .featured{
+        display: none;
+    }
+    .album-cover {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+   
+    .album-cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0;
+    }
+   
+    .author-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+
+    .author-content {
+        flex: 1;
+    }
+
+
+    .author-image {
+        width: 130px;
+        height: 130px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        margin-left: 40px;
+    }
+
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background: #000;
+        color: white;
+    }
+
+
+    .content-lines {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* Large Mobile (540px-720px) */
+@media (min-width: 540px) and (max-width: 720px) {
+    .main-content {
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        margin-bottom: 0;
+    }
+    .body{
+        margin: 0px;
+    }
+    .white-container-box img{
+        width: 80px;
+        height: 80px;
+    }
+    .white-container-box{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+
+
+    .title{
+        font-size: 32px;
+        padding: 20px;
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+
+
+    .subtitle {
+        font-size: 20px;
+        margin: 20px 20px;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        gap: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .featured{
+        display: none;
+    }
+    .album-cover {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+   
+    .album-cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0;
+    }
+    .grid-container {
+        column-count: 1;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .grid-container h2{
+        text-align: center;
+    }
+
+
+    .author_section{
+        display: flex;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+/* Small Mobile (360px-540px) */
+@media (max-width: 540px) {
+    .main-content {
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        margin-bottom: 0;
+    }
+    .body{
+        margin: 0px;
+    }
+    .white-container-box img{
+        width: 80px;
+        height: 80px;
+    }
+    .white-container-box{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+.nav-links a{
+    margin: auto;
+}
+    .title{
+        font-size: 38px;
+        padding: 20px;
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+
+
+    .subtitle {
+        font-size: 20px;
+        margin: 20px 20px;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        gap: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .featured{
+        display: none;
+    }
+    .album-cover {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+   
+    .album-cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0;
+    }
+    .grid-container {
+        column-count: 1;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .grid-container h2{
+        text-align: center;
+    }
+
+
+    .author_section{
+        display: flex;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
